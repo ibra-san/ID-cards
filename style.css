@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* { 
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.id-card { 
+    padding: 5px;
+    background-color: #F9F7F3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: "Montserrat", sans-serif;
+    
+   
+
+
+}
+
+.id-card img { 
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.agent-name { 
+    font-size: 15px;
+    font-weight: 800;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.agent-designation { 
+    margin-bottom: 10px;
+}
+
+
+
+.agent-photo { 
+    border: 3px solid #aa8a4c;
+    border-radius: 10px;
+    width: 20px;
+
+}
+
+.whatsapp-container  { 
+    background-color: #29a71a;
+    width: inherit; 
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+}
+
+.whatsapp { 
+    text-decoration: none;
+    color: white;
+}
