@@ -13,12 +13,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    font-family: "Montserrat", sans-serif;
     
-   
+    font-family: "Montserrat", sans-serif;
+    border: 3px solid #aa8a4c;
 
-
+    /** max-width: 800px; **/
 }
 
 .id-card img { 
@@ -40,6 +39,9 @@
     margin-bottom: 10px;
 }
 
+.location { 
+    border: 3px solid #aa8a4c;
+}
 
 
 .agent-photo { 
@@ -50,15 +52,103 @@
 }
 
 .whatsapp-container  { 
-    background-color: #29a71a;
+    background-color: #aa8a4c;
     width: inherit; 
     text-align: center;
     border-radius: 10px;
     color: white;
     padding: 10px;
+    width: 200px; 
+    margin-top: 10px;
 }
 
 .whatsapp { 
     text-decoration: none;
     color: white;
+    font-size: 12px;
 }
+
+.fa-whatsapp { 
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.call { 
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.fa-phone { 
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.call-container  { 
+    background-color: #aa8a4c;
+    width: inherit; 
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.email-container  { 
+    background-color: #aa8a4c;
+    width: inherit; 
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.location-container  { 
+    background-color: #aa8a4c;
+    width: inherit; 
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.fa-location-dot { 
+    margin-right: 5px;
+}
+
+.fa-envelope { 
+    font-size: 12px;
+    margin-right: 3px;
+}
+
+.email { 
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.elevation-link { 
+    text-decoration: none;
+}
+
+.brochure { 
+    text-decoration: none;
+    color: white;
+
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: black;
+    
+    border-radius: 10px;
+    font-size: 12px;
+    width: 200px;
+    text-align: center;
+    font-weight: 500;
+}
+
