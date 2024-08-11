@@ -1,30 +1,134 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * { 
     padding: 0;
     margin: 0;
+    z-index: 10;
+    
+}
+
+body { 
+    background-color: #F9F7F3;
+    position: relative;
+
+}
+
+.triangle { 
+    position: absolute;
+    z-index:0;
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent; 
+    border-top: 200px solid #aa8a4c;
+}
+
+.pulsing-c { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pulsate 3s infinite;
+    position: fixed;
+    top: 30%;
+    font-size: 200px;
+    font-family: "Michroma", sans-serif;
+    border-radius: 100%;
+    color: rgb(170, 138, 76);
 }
 
 
+.pulsing-circle { 
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    background-color: #aa8a4c;
+    border-radius: 100%;
+
+    animation: pulsateplus 3s infinite;
+
+}
+
+.pulsing-circle1 { 
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    top: 45%;
+    background-color: transparent;
+    border-radius: 100%;
+
+    animation: pulsateplus 3s infinite;
+
+}
+
+.pulsing-circle2 { 
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    top: 37%;
+    background-color: transparent;
+    border-radius: 100%;
+
+    animation: pulsateplus 3s infinite;
+
+} 
+
+@keyframes pulsate { 
+    0% { 
+        opacity: 5%;
+        
+    }
+
+    50% { 
+        opacity: 50%;
+    }
+
+    100% { 
+        opacity: 5%;
+    }
+}
+
+@keyframes pulsateplus { 
+    0% { 
+        opacity: 5%;
+        box-shadow: 0 0 0 0 rgb(170, 138, 76, 0.7);
+    }
+
+    50% { 
+        opacity: 50%;
+        box-shadow: 0 0 0 100px rgb(170, 138, 76, 0);
+    }
+
+    100% { 
+        opacity: 5%;
+    }
+}
 
 .id-card { 
-    padding: 5px;
-    background-color: #F9F7F3;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     
     font-family: "Montserrat", sans-serif;
-    border: 3px solid #aa8a4c;
 
     /** max-width: 800px; **/
 }
 
-.id-card img { 
+
+.condor-logo { 
     width: 150px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 20px;
-    
+}
+
+.agent-photo { 
+    border: 3px solid #aa8a4c;
+    border-radius: 10px;
+    width: 150px;
+
 }
 
 .agent-name { 
@@ -44,12 +148,7 @@
 }
 
 
-.agent-photo { 
-    border: 3px solid #aa8a4c;
-    border-radius: 10px;
-    width: 20px;
 
-}
 
 .whatsapp-container  { 
     background-color: #aa8a4c;
